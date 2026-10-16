@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerMiniPlayer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_mini_player"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressMini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:indicatorColor="?attr/colorPrimary"
+        app:trackColor="@color/app_surface_high"
+        app:trackThickness="2dp" />
+
+    <LinearLayout
+        android:id="@+id/miniPlayerBody"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/cd_mini_player"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingEnd="10dp">
+
+        <ImageView
+            android:id="@+id/imgMiniCover"
+            style="@style/CoverThumb"
+            android:transitionName="@string/transition_cover"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMiniTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/app_text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMiniArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/app_text_secondary"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnMiniPlayPause"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_round_button"
+            android:contentDescription="@string/cd_play"
+            android:padding="13dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_play"
+            app:tint="?attr/colorOnPrimary" />
+
+        <ImageButton
+            android:id="@+id/btnMiniNext"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_round_button_secondary"
+            android:contentDescription="@string/cd_next"
+            android:padding="13dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_next"
+            app:tint="@color/app_text_primary" />
+
+    </LinearLayout>
+
+</LinearLayout>

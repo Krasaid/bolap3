@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="28dp">
+
+    <TextView
+        android:id="@+id/tvStatusIcon"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:background="@drawable/bg_cover_placeholder_dark"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStatusTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:accessibilityHeading="true"
+        android:gravity="center"
+        android:textColor="@color/app_text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStatusMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:textColor="@color/app_text_secondary"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnPrimaryAction"
+        style="@style/PrimaryButton"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:id="@+id/btnSecondaryAction"
+        style="@style/SecondaryButton"
+        android:layout_marginTop="14dp" />
+
+</LinearLayout>

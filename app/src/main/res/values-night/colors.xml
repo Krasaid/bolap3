@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark palette (the app's original look). -->
+<resources>
+    <color name="app_background">#000000</color>
+    <color name="app_surface">#101010</color>
+    <color name="app_surface_variant">#151515</color>
+    <color name="app_surface_high">#1E1E1E</color>
+    <color name="app_border">#252525</color>
+
+    <color name="app_text_primary">#FFFFFF</color>
+    <color name="app_text_secondary">#A1A1A1</color>
+    <color name="app_text_tertiary">#6E6E6E</color>
+
+    <color name="app_accent">#00C2FF</color>
+    <color name="app_on_accent">#000000</color>
+    <color name="app_accent_container">#102A33</color>
+    <color name="app_danger">#FF6B6B</color>
+
+    <!-- Over the blurred artwork in the player: lets the cover color through at the top,
+         keeps the controls readable at the bottom. -->
+    <color name="player_scrim_top">#80000000</color>
+    <color name="player_scrim_bottom">#EB000000</color>
+</resources>

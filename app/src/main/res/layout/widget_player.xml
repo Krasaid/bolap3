@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RemoteViews layout: only framework widgets/attributes are allowed here. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widgetRoot"
+    tools:ignore="UseAppTint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/widgetCover"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_cover_placeholder_dark"
+        android:contentDescription="@string/cd_cover"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_album" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widgetTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/widget_nothing_playing"
+            android:textColor="@color/app_text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widgetArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/app_text_secondary"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/widgetPrevious"
+        android:layout_width="44dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/cd_previous"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_previous"
+        android:tint="@color/app_text_primary" />
+
+    <ImageButton
+        android:id="@+id/widgetPlayPause"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_widget_play"
+        android:contentDescription="@string/cd_play"
+        android:padding="12dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_play"
+        android:tint="@color/app_on_accent" />
+
+    <ImageButton
+        android:id="@+id/widgetNext"
+        android:layout_width="44dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/cd_next"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_next"
+        android:tint="@color/app_text_primary" />
+
+</LinearLayout>

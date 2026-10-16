@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="true"
+            android:text="@string/brand_name"
+            android:textColor="@color/app_text_primary"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/welcome_title"
+            android:textColor="@color/app_text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/welcome_subtitle"
+            android:textColor="@color/app_text_secondary"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnScanDevice"
+            style="@style/PrimaryButton"
+            android:layout_marginTop="40dp"
+            android:text="@string/welcome_scan_device" />
+
+        <Button
+            android:id="@+id/btnPickFolder"
+            style="@style/SecondaryButton"
+            android:layout_marginTop="14dp"
+            android:text="@string/welcome_pick_folder" />
+
+        <TextView
+            android:id="@+id/tvFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:gravity="center"
+            android:text="@string/welcome_footer"
+            android:textColor="@color/app_text_tertiary"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,316 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">bolap3</string>
+    <string name="brand_name">HiFi Player</string>
+
+    <!-- Common -->
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_back">Volver</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_rename">Renombrar</string>
+    <string name="action_create">Crear</string>
+    <string name="unknown_title">Canción desconocida</string>
+    <string name="unknown_artist">Artista desconocido</string>
+    <string name="unknown_album">Álbum desconocido</string>
+    <string name="unknown_group">Desconocido</string>
+    <string name="storage_root">Almacenamiento</string>
+    <string name="selected_folder">Carpeta seleccionada</string>
+    <string name="duration_unknown">--:--</string>
+    <string name="time_zero">0:00</string>
+    <plurals name="song_count">
+        <item quantity="one">%d canción</item>
+        <item quantity="many">%d canciones</item>
+        <item quantity="other">%d canciones</item>
+    </plurals>
+    <plurals name="songs_found">
+        <item quantity="one">%d canción encontrada</item>
+        <item quantity="many">%d canciones encontradas</item>
+        <item quantity="other">%d canciones encontradas</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%d minuto</item>
+        <item quantity="many">%d minutos</item>
+        <item quantity="other">%d minutos</item>
+    </plurals>
+
+    <!-- Welcome -->
+    <string name="welcome_title">Tu música, en alta calidad</string>
+    <string name="welcome_subtitle">Reproduce archivos locales sin cuenta, sin anuncios y sin conexión obligatoria.</string>
+    <string name="welcome_scan_device">Buscar música en el dispositivo</string>
+    <string name="welcome_pick_folder">Elegir carpeta manualmente</string>
+    <string name="welcome_footer">La sincronización será opcional más adelante.</string>
+
+    <!-- Scan -->
+    <string name="scan_title">Buscando tu música…</string>
+    <string name="scan_subtitle_default">Esto puede tardar unos segundos.</string>
+    <string name="scan_subtitle_folder">Revisando carpeta seleccionada…</string>
+    <string name="scan_subtitle_device">Buscando música en el dispositivo…</string>
+
+    <!-- Status states -->
+    <string name="status_no_music_title">No encontramos música</string>
+    <string name="status_no_music_message">Puedes elegir una carpeta manualmente o volver a escanear el dispositivo.</string>
+    <string name="status_permission_title">Permiso no concedido</string>
+    <string name="status_permission_message">No podemos revisar toda tu música, pero puedes elegir una carpeta manualmente sin dar acceso completo.</string>
+    <string name="status_folder_title">Carpeta no disponible</string>
+    <string name="status_folder_message">La carpeta seleccionada ya no está disponible o el permiso fue retirado.</string>
+    <string name="status_file_title">Archivo no disponible</string>
+    <string name="status_file_message">Esta canción fue movida, eliminada o ya no se puede leer.</string>
+    <string name="status_playback_title">No se pudo reproducir</string>
+    <string name="status_playback_message">El archivo puede estar dañado, no disponible o en un formato no compatible.</string>
+    <string name="status_pick_folder">Elegir carpeta manualmente</string>
+    <string name="status_pick_other_folder">Elegir otra carpeta</string>
+    <string name="status_retry_scan">Reintentar escaneo</string>
+    <string name="status_go_home">Volver al inicio</string>
+    <string name="status_go_library">Volver a biblioteca</string>
+
+    <!-- Library -->
+    <string name="library_title">Biblioteca</string>
+    <string name="library_search_hint">Buscar canciones, artistas o álbumes</string>
+    <string name="tab_home">Inicio</string>
+    <string name="tab_songs">Canciones</string>
+    <string name="tab_albums">Álbumes</string>
+    <string name="tab_artists">Artistas</string>
+    <string name="tab_folders">Carpetas</string>
+    <string name="tab_playlists">Playlists</string>
+    <string name="library_play_all">Reproducir</string>
+    <string name="library_shuffle_all">Aleatorio</string>
+    <string name="library_empty_search">Sin resultados para \"%s\"</string>
+    <string name="library_empty_list">No hay canciones aquí todavía</string>
+    <string name="library_back_to">‹ %s</string>
+    <string name="library_sort">Ordenar</string>
+    <string name="library_settings">Ajustes</string>
+    <string name="library_clear_search">Borrar búsqueda</string>
+    <string name="sort_title">Título</string>
+    <string name="sort_artist">Artista</string>
+    <string name="sort_album">Álbum</string>
+    <string name="sort_duration">Duración</string>
+    <string name="sort_date_added">Añadidas recientemente</string>
+    <string name="sort_dialog_title">Ordenar canciones por</string>
+    <string name="group_subtitle_with_artist">%1$s · %2$s</string>
+    <string name="library_view_grid">Ver en cuadrícula</string>
+    <string name="library_view_list">Ver como lista</string>
+
+    <!-- Home -->
+    <string name="home_greeting_morning">Buenos días</string>
+    <string name="home_greeting_afternoon">Buenas tardes</string>
+    <string name="home_greeting_night">Buenas noches</string>
+    <string name="home_library_summary">%s en tu biblioteca</string>
+    <string name="home_continue">Continuar escuchando</string>
+    <string name="home_recently_added">Añadidas recientemente</string>
+    <string name="home_rediscover">Redescubre</string>
+    <string name="home_your_playlists">Tus playlists</string>
+    <string name="home_empty">Escucha algo y aquí aparecerán tus recientes, favoritas y más escuchadas.</string>
+
+    <!-- Playlists -->
+    <string name="playlist_favorites">Favoritas</string>
+    <string name="playlist_recent">Recientes</string>
+    <string name="playlist_most_played">Más escuchadas</string>
+    <string name="playlist_new">Nueva playlist</string>
+    <string name="playlist_name_hint">Nombre de la playlist</string>
+    <string name="playlist_add_to">Añadir a playlist</string>
+    <string name="playlist_added">Añadida a \"%s\"</string>
+    <string name="playlist_already_contains">Ya estaba en \"%s\"</string>
+    <string name="playlist_created">Playlist \"%s\" creada</string>
+    <string name="playlist_delete_confirm">¿Eliminar la playlist \"%s\"? Las canciones no se borran del dispositivo.</string>
+    <string name="playlist_options">Opciones de playlist</string>
+    <string name="playlist_name_empty">Escribe un nombre</string>
+
+    <!-- Song actions -->
+    <string name="action_play_next">Reproducir a continuación</string>
+    <string name="action_add_queue">Añadir a la cola</string>
+    <string name="action_favorite_add">Añadir a favoritas</string>
+    <string name="action_favorite_remove">Quitar de favoritas</string>
+    <string name="action_go_album">Ir al álbum</string>
+    <string name="action_go_artist">Ir al artista</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_exclude_folder">Excluir esta carpeta de la biblioteca</string>
+    <string name="action_remove_from_playlist">Quitar de la playlist</string>
+    <string name="action_delete_file">Eliminar del dispositivo</string>
+    <string name="action_equalizer">Ecualizador</string>
+    <string name="action_sleep_timer">Temporizador de apagado</string>
+    <string name="action_lyrics">Letra</string>
+    <string name="action_speed">Velocidad de reproducción</string>
+    <string name="added_to_queue">Añadida a la cola</string>
+    <string name="will_play_next">Sonará a continuación</string>
+    <string name="favorite_added">Añadida a favoritas</string>
+    <string name="favorite_removed">Quitada de favoritas</string>
+    <string name="folder_excluded">Carpeta excluida</string>
+    <string name="share_audio">Compartir audio</string>
+
+    <!-- Ringtone -->
+    <string name="action_set_ringtone">Usar como tono</string>
+    <string name="ringtone_title">Usar \"%s\" como</string>
+    <string name="ringtone_call">Tono de llamada</string>
+    <string name="ringtone_notification">Sonido de notificación</string>
+    <string name="ringtone_alarm">Sonido de alarma</string>
+    <string name="ringtone_permission_title">Permiso necesario</string>
+    <string name="ringtone_permission_message">Para cambiar los sonidos del sistema, activa \"Permitir modificar los ajustes del sistema\" para HiFi Player en la siguiente pantalla y vuelve atrás.</string>
+    <string name="ringtone_open_settings">Abrir ajustes</string>
+    <string name="ringtone_set_call">Tono de llamada cambiado</string>
+    <string name="ringtone_set_notification">Sonido de notificación cambiado</string>
+    <string name="ringtone_set_alarm">Sonido de alarma cambiado</string>
+    <string name="ringtone_failed">No se pudo cambiar el sonido</string>
+
+    <!-- Delete -->
+    <string name="delete_title">Eliminar archivo</string>
+    <string name="delete_message">Esta acción eliminará \"%s\" del dispositivo.</string>
+    <string name="delete_done">Archivo eliminado</string>
+    <string name="delete_failed">No se pudo eliminar el archivo</string>
+    <plurals name="delete_message_many">
+        <item quantity="one">Se eliminará %d archivo del dispositivo.</item>
+        <item quantity="many">Se eliminarán %d archivos del dispositivo.</item>
+        <item quantity="other">Se eliminarán %d archivos del dispositivo.</item>
+    </plurals>
+    <plurals name="deleted_many">
+        <item quantity="one">%d archivo eliminado</item>
+        <item quantity="many">%d archivos eliminados</item>
+        <item quantity="other">%d archivos eliminados</item>
+    </plurals>
+
+    <!-- Multi-selection and playlist reordering -->
+    <plurals name="selection_count">
+        <item quantity="one">%d seleccionada</item>
+        <item quantity="many">%d seleccionadas</item>
+        <item quantity="other">%d seleccionadas</item>
+    </plurals>
+    <plurals name="added_many_to_queue">
+        <item quantity="one">%d canción añadida a la cola</item>
+        <item quantity="many">%d canciones añadidas a la cola</item>
+        <item quantity="other">%d canciones añadidas a la cola</item>
+    </plurals>
+    <plurals name="favorites_added_many">
+        <item quantity="one">%d canción añadida a favoritas</item>
+        <item quantity="many">%d canciones añadidas a favoritas</item>
+        <item quantity="other">%d canciones añadidas a favoritas</item>
+    </plurals>
+    <plurals name="playlist_added_many">
+        <item quantity="one">%1$d canción añadida a \"%2$s\"</item>
+        <item quantity="many">%1$d canciones añadidas a \"%2$s\"</item>
+        <item quantity="other">%1$d canciones añadidas a \"%2$s\"</item>
+    </plurals>
+    <string name="selection_close">Cerrar selección</string>
+    <string name="selection_select_all">Seleccionar todo</string>
+    <string name="action_play">Reproducir</string>
+    <string name="playlist_reorder">Reordenar playlist</string>
+    <string name="playlist_reorder_done">Terminar de reordenar</string>
+
+    <!-- Player -->
+    <string name="player_header">Reproduciendo</string>
+    <string name="player_no_song_title">No hay canción seleccionada</string>
+    <string name="player_no_song_artist">Vuelve a la biblioteca</string>
+    <string name="transition_cover" translatable="false">cover</string>
+    <string name="player_error_toast">No se pudo reproducir \"%s\"</string>
+    <string name="cd_back_to_library">Volver a la biblioteca</string>
+    <string name="cd_more_options">Más opciones</string>
+    <string name="cd_play">Reproducir</string>
+    <string name="cd_pause">Pausar</string>
+    <string name="cd_previous">Anterior</string>
+    <string name="cd_next">Siguiente</string>
+    <string name="cd_shuffle_on">Aleatorio activado</string>
+    <string name="cd_shuffle_off">Aleatorio desactivado</string>
+    <string name="cd_repeat_off">Repetir desactivado</string>
+    <string name="cd_repeat_all">Repetir todo</string>
+    <string name="cd_repeat_one">Repetir una canción</string>
+    <string name="cd_favorite">Favorita</string>
+    <string name="cd_queue">Cola de reproducción</string>
+    <string name="cd_cover">Carátula</string>
+    <string name="cd_song_options">Opciones de la canción</string>
+    <string name="cd_seek">Posición de reproducción</string>
+    <string name="cd_mini_player">Abrir reproductor</string>
+    <string name="audio_bits" tools:ignore="PluralsCandidate">%d bits</string>
+    <string name="audio_khz">%s kHz</string>
+    <string name="audio_kbps">%d kbps</string>
+    <string name="speed_value">%sx</string>
+
+    <!-- Sleep timer -->
+    <string name="sleep_title">Temporizador de apagado</string>
+    <string name="sleep_end_of_track">Al terminar la canción</string>
+    <string name="sleep_cancel">Cancelar temporizador</string>
+    <string name="sleep_set">La música se detendrá en %s</string>
+    <string name="sleep_set_end_of_track">La música se detendrá al terminar la canción</string>
+    <string name="sleep_cancelled">Temporizador cancelado</string>
+    <string name="sleep_remaining">Se detendrá en %s</string>
+    <string name="sleep_remaining_end_of_track">Se detendrá al terminar la canción</string>
+
+    <!-- Queue -->
+    <string name="queue_title">Cola de reproducción</string>
+    <string name="queue_shuffle_hint">Orden aleatorio activado: se muestra el orden en que sonarán.</string>
+    <string name="queue_empty">La cola está vacía</string>
+    <string name="queue_removed">Quitada de la cola</string>
+    <string name="cd_drag_handle">Mantén pulsado para mover</string>
+
+    <!-- Lyrics -->
+    <string name="lyrics_title">Letra</string>
+    <string name="lyrics_loading">Buscando letra…</string>
+    <string name="lyrics_not_found">No se encontró letra para esta canción.</string>
+    <string name="lyrics_hint">Se buscan letras incrustadas en el archivo (MP3 y FLAC) y archivos .lrc junto a la canción (solo en carpetas elegidas manualmente).</string>
+
+    <!-- Equalizer -->
+    <string name="eq_title">Ecualizador</string>
+    <string name="eq_enabled">Activar ecualizador</string>
+    <string name="eq_preset">Preajuste</string>
+    <string name="eq_preset_custom">Personalizado</string>
+    <string name="eq_bass_boost">Refuerzo de graves</string>
+    <string name="eq_unavailable">El ecualizador no está disponible en este dispositivo.</string>
+    <string name="eq_no_session">Reproduce una canción para configurar el ecualizador.</string>
+    <string name="eq_system">Abrir ecualizador del sistema</string>
+    <string name="eq_system_unavailable">No hay ecualizador del sistema disponible en este dispositivo</string>
+    <string name="eq_band_hz">%d Hz</string>
+    <string name="eq_band_khz">%s kHz</string>
+    <string name="eq_db">%s dB</string>
+    <string name="eq_reset">Restablecer</string>
+    <string name="eq_external_hint">Si usas un ecualizador de otra app (Wavelet, Poweramp EQ…), ya recibe el audio de HiFi Player. Desactiva este para no aplicar dos ecualizadores a la vez.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_section_library">Biblioteca</string>
+    <string name="settings_rescan">Volver a escanear</string>
+    <string name="settings_rescan_summary_device">Origen: todo el dispositivo</string>
+    <string name="settings_rescan_summary_folder">Origen: carpeta elegida manualmente</string>
+    <string name="settings_change_source">Cambiar origen de la música</string>
+    <string name="settings_change_source_summary">Elegir entre todo el dispositivo o una carpeta</string>
+    <string name="settings_excluded">Carpetas excluidas</string>
+    <string name="settings_excluded_none">Ninguna carpeta excluida</string>
+    <plurals name="settings_excluded_count">
+        <item quantity="one">%d carpeta excluida</item>
+        <item quantity="many">%d carpetas excluidas</item>
+        <item quantity="other">%d carpetas excluidas</item>
+    </plurals>
+    <string name="settings_excluded_dialog">Marca las carpetas que quieres volver a incluir</string>
+    <string name="settings_excluded_restore">Restaurar</string>
+    <string name="settings_excluded_restored">Carpetas restauradas. Vuelve a escanear para ver sus canciones.</string>
+    <string name="settings_min_duration">Duración mínima de las pistas</string>
+    <string name="settings_min_duration_none">Sin mínimo</string>
+    <plurals name="settings_seconds">
+        <item quantity="one">%d segundo</item>
+        <item quantity="many">%d segundos</item>
+        <item quantity="other">%d segundos</item>
+    </plurals>
+    <string name="settings_min_duration_changed">Se aplicará en el próximo escaneo</string>
+    <string name="settings_auto_refresh">Actualizar la biblioteca automáticamente</string>
+    <string name="settings_auto_refresh_summary">Detecta canciones nuevas o borradas en el dispositivo</string>
+    <string name="settings_section_playback">Reproducción</string>
+    <string name="settings_skip_silence">Omitir silencios</string>
+    <string name="settings_replay_gain">Normalizar volumen (ReplayGain)</string>
+    <string name="settings_replay_gain_summary">Usa las etiquetas ReplayGain de los archivos que las tengan</string>
+    <string name="settings_resume_headphones">Reanudar al conectar auriculares</string>
+    <string name="settings_resume_headphones_summary">Si la música se pausó al desconectarlos (cable, USB o Bluetooth), vuelve a sonar al conectarlos en los 10 minutos siguientes</string>
+    <string name="settings_section_appearance">Apariencia</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_theme_system">Según el sistema</string>
+    <string name="settings_theme_light">Claro</string>
+    <string name="settings_theme_dark">Oscuro</string>
+    <string name="settings_dynamic_colors">Colores dinámicos (Material You)</string>
+    <string name="settings_dynamic_colors_summary">Usa los colores de tu fondo de pantalla</string>
+    <string name="settings_artwork_colors">Colores según la carátula</string>
+    <string name="settings_artwork_colors_summary">Botones, pestañas y barra de progreso toman el color de la canción que suena</string>
+    <string name="settings_section_about">Acerca de</string>
+    <string name="settings_version">Versión %s</string>
+
+    <!-- Notification / widget / tile / Android Auto -->
+    <string name="notification_channel_playback">Reproducción</string>
+    <string name="widget_description">Controla la reproducción desde la pantalla de inicio</string>
+    <string name="widget_nothing_playing">Nada en reproducción</string>
+    <string name="tile_label">Reproducir/Pausar</string>
+    <string name="browse_root">Biblioteca</string>
+</resources>

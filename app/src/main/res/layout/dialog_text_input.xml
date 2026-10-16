@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="24dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="24dp">
+
+    <EditText
+        android:id="@+id/etDialogInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/playlist_name_hint"
+        android:inputType="textCapSentences"
+        android:maxLength="80"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/app_text_primary"
+        android:textColorHint="@color/app_text_tertiary" />
+
+</FrameLayout>

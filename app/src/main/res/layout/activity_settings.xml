@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                style="@style/SettingsSectionTitle"
+                android:layout_marginTop="8dp"
+                android:text="@string/settings_section_library" />
+
+            <LinearLayout
+                android:id="@+id/rowRescan"
+                style="@style/SettingsRow">
+
+                <TextView
+                    style="@style/SettingsRowTitle"
+                    android:text="@string/settings_rescan" />
+
+                <TextView
+                    android:id="@+id/tvRescanSummary"
+                    style="@style/SettingsRowSummary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowChangeSource"
+                style="@style/SettingsRow">
+
+                <TextView
+                    style="@style/SettingsRowTitle"
+                    android:text="@string/settings_change_source" />
+
+                <TextView
+                    style="@style/SettingsRowSummary"
+                    android:text="@string/settings_change_source_summary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowExcluded"
+                style="@style/SettingsRow">
+
+                <TextView
+                    style="@style/SettingsRowTitle"
+                    android:text="@string/settings_excluded" />
+
+                <TextView
+                    android:id="@+id/tvExcludedSummary"
+                    style="@style/SettingsRowSummary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowMinDuration"
+                style="@style/SettingsRow">
+
+                <TextView
+                    style="@style/SettingsRowTitle"
+                    android:text="@string/settings_min_duration" />
+
+                <TextView
+                    android:id="@+id/tvMinDurationSummary"
+                    style="@style/SettingsRowSummary" />
+            </LinearLayout>
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchAutoRefresh"
+                style="@style/SettingsSwitch"
+                android:text="@string/settings_auto_refresh" />
+
+            <TextView
+                style="@style/SettingsRowSummary"
+                android:layout_marginTop="-8dp"
+                android:text="@string/settings_auto_refresh_summary" />
+
+            <TextView
+                style="@style/SettingsSectionTitle"
+                android:text="@string/settings_section_playback" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchSkipSilence"
+                style="@style/SettingsSwitch"
+                android:text="@string/settings_skip_silence" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchReplayGain"
+                style="@style/SettingsSwitch"
+                android:text="@string/settings_replay_gain" />
+
+            <TextView
+                style="@style/SettingsRowSummary"
+                android:layout_marginTop="-8dp"
+                android:text="@string/settings_replay_gain_summary" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchResumeHeadphones"
+                style="@style/SettingsSwitch"
+                android:text="@string/settings_resume_headphones" />
+
+            <TextView
+                style="@style/SettingsRowSummary"
+                android:layout_marginTop="-8dp"
+                android:text="@string/settings_resume_headphones_summary" />
+
+            <LinearLayout
+                android:id="@+id/rowEqualizer"
+                style="@style/SettingsRow"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    style="@style/SettingsRowTitle"
+                    android:text="@string/action_equalizer" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingsSectionTitle"
+                android:text="@string/settings_section_appearance" />
+
+            <LinearLayout
+                android:id="@+id/rowTheme"
+                style="@style/SettingsRow">
+
+                <TextView
+                    style="@style/SettingsRowTitle"
+                    android:text="@string/settings_theme" />
+
+                <TextView
+                    android:id="@+id/tvThemeSummary"
+                    style="@style/SettingsRowSummary" />
+            </LinearLayout>
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchDynamicColors"
+                style="@style/SettingsSwitch"
+                android:text="@string/settings_dynamic_colors" />
+
+            <TextView
+                style="@style/SettingsRowSummary"
+                android:layout_marginTop="-8dp"
+                android:text="@string/settings_dynamic_colors_summary" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchArtworkColors"
+                style="@style/SettingsSwitch"
+                android:text="@string/settings_artwork_colors" />
+
+            <TextView
+                style="@style/SettingsRowSummary"
+                android:layout_marginTop="-8dp"
+                android:text="@string/settings_artwork_colors_summary" />
+
+            <TextView
+                style="@style/SettingsSectionTitle"
+                android:text="@string/settings_section_about" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                style="@style/SettingsRowSummary"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The song database and library state hold content:// URIs that only exist on this device
+    (MediaStore IDs, SAF permissions). Restoring them elsewhere would open a library full of
+    unplayable songs, so they are excluded. Settings, equalizer and excluded folders are kept.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="database" path="hifi_player_database" />
+        <exclude domain="database" path="hifi_player_database-wal" />
+        <exclude domain="database" path="hifi_player_database-shm" />
+        <exclude domain="sharedpref" path="library_prefs.xml" />
+        <exclude domain="sharedpref" path="playback_state.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="database" path="hifi_player_database" />
+        <exclude domain="database" path="hifi_player_database-wal" />
+        <exclude domain="database" path="hifi_player_database-shm" />
+        <exclude domain="sharedpref" path="library_prefs.xml" />
+        <exclude domain="sharedpref" path="playback_state.xml" />
+    </device-transfer>
+</data-extraction-rules>

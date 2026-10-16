@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerSong"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/bg_song_item"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingEnd="4dp">
+
+    <FrameLayout
+        android:layout_width="56dp"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/imgSongCover"
+            style="@style/CoverThumb"
+            android:importantForAccessibility="no" />
+
+        <!-- Shown over the cover while the song is selected (multi-selection). -->
+        <ImageView
+            android:id="@+id/imgSongCheck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.92"
+            android:background="@drawable/bg_selected_check"
+            android:importantForAccessibility="no"
+            android:padding="14dp"
+            android:src="@drawable/ic_check"
+            android:visibility="gone"
+            app:tint="?attr/colorOnPrimary" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSongTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/app_text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSongArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/app_text_secondary"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSongDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/app_text_secondary"
+        android:textSize="13sp" />
+
+    <ImageButton
+        android:id="@+id/btnSongOptions"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/cd_song_options"
+        android:padding="12dp"
+        android:src="@drawable/ic_more_vertical"
+        app:tint="@color/app_text_secondary" />
+
+    <!-- Drag handle, only while reordering a playlist. -->
+    <ImageView
+        android:id="@+id/imgSongDrag"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/cd_drag_handle"
+        android:padding="12dp"
+        android:src="@drawable/ic_drag_handle"
+        android:visibility="gone"
+        app:tint="@color/app_text_secondary" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Highlights the playing row. The touch ripple is set separately as android:foreground,
+     because theme attributes (?attr/selectableItemBackground) cannot be used inside a selector. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="?attr/colorPrimaryContainer" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+    <item android:state_activated="true">
+        <shape>
+            <solid android:color="?attr/colorPrimaryContainer" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+    <item android:drawable="@android:color/transparent" />
+</selector>

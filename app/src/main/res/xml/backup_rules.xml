@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pre-API 31 equivalent of data_extraction_rules.xml (kept for completeness; minSdk is 34). -->
+<full-backup-content>
+    <exclude domain="database" path="hifi_player_database" />
+    <exclude domain="database" path="hifi_player_database-wal" />
+    <exclude domain="database" path="hifi_player_database-shm" />
+    <exclude domain="sharedpref" path="library_prefs.xml" />
+    <exclude domain="sharedpref" path="playback_state.xml" />
+</full-backup-content>

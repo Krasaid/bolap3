@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Light palette. The dark palette lives in values-night/colors.xml with the same names. -->
+<resources>
+
+    <color name="app_background">#F6F7F9</color>
+    <color name="app_surface">#FFFFFF</color>
+    <color name="app_surface_variant">#ECEEF2</color>
+    <color name="app_surface_high">#E2E5EA</color>
+    <color name="app_border">#D6DAE0</color>
+
+    <color name="app_text_primary">#111316</color>
+    <color name="app_text_secondary">#4F5660</color>
+    <color name="app_text_tertiary">#767C85</color>
+
+    <color name="app_accent">#00769E</color>
+    <color name="app_on_accent">#FFFFFF</color>
+    <color name="app_accent_container">#D3F0FA</color>
+    <color name="app_danger">#C62828</color>
+
+    <!-- Over the blurred artwork in the player: lets the cover color through at the top,
+         keeps the controls readable at the bottom. -->
+    <color name="player_scrim_top">#99F6F7F9</color>
+    <color name="player_scrim_bottom">#F2F6F7F9</color>
+</resources>

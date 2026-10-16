@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+        Single DayNight theme: light and dark differ only through values/colors.xml and
+        values-night/colors.xml. Accent colors are exposed as colorPrimary/colorOnPrimary so that
+        Material You (dynamic colors) can replace them when the user enables it in Settings.
+    -->
+    <style name="Base.Theme.Bolap3" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/app_accent</item>
+        <item name="colorOnPrimary">@color/app_on_accent</item>
+        <item name="colorPrimaryContainer">@color/app_accent_container</item>
+        <item name="colorOnPrimaryContainer">@color/app_text_primary</item>
+        <item name="colorSecondary">@color/app_accent</item>
+        <item name="colorOnSecondary">@color/app_on_accent</item>
+        <item name="colorSecondaryContainer">@color/app_accent_container</item>
+        <item name="colorOnSecondaryContainer">@color/app_text_primary</item>
+        <item name="colorError">@color/app_danger</item>
+
+        <item name="android:colorBackground">@color/app_background</item>
+        <item name="colorSurface">@color/app_surface</item>
+        <item name="colorOnSurface">@color/app_text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/app_text_secondary</item>
+        <item name="colorSurfaceContainerLowest">@color/app_background</item>
+        <item name="colorSurfaceContainerLow">@color/app_surface</item>
+        <item name="colorSurfaceContainer">@color/app_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/app_surface_variant</item>
+        <item name="colorSurfaceContainerHighest">@color/app_surface_high</item>
+        <item name="colorOutline">@color/app_text_tertiary</item>
+        <item name="colorOutlineVariant">@color/app_border</item>
+
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:textColorPrimary">@color/app_text_primary</item>
+        <item name="android:textColorSecondary">@color/app_text_secondary</item>
+    </style>
+
+    <style name="Theme.Bolap3" parent="Base.Theme.Bolap3" />
+
+    <!-- Launch screen: kept on screen by LauncherActivity until it knows where to go. -->
+    <style name="Theme.Bolap3.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/app_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.Bolap3</item>
+    </style>
+</resources>
